@@ -3,7 +3,7 @@
     --text-color2:#fff;
     --main-color:yellow;
     --bg-color: #000137;
-    --second-color:#EFFD5F;
+    --second-color:red;
  }
  *{
      margin:0;
@@ -89,7 +89,7 @@
  }
  
  .btn:hover{
-     box-shadow: 0 5px 10px var(--text-color2);
+     box-shadow: 0 5px 10px var(--text-color1);
  }
  .right img{
      width: 400px;
@@ -104,6 +104,7 @@
      margin: 0 auto;
      filter:blur(5px);
      animation: efeito2 1.8s infinite alternate;
+     border-radius: 50px
  }
  @keyframes efeito{
      0%{
@@ -124,3 +125,39 @@
      }
  }
  
+ /* criando medidor de estatistica automatico */
+
+ #sobre{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+ }
+
+ .medicao{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 6rem 6rem 3rem;
+    padding: 2rem;
+    gap: 2rem;
+ }
+ .medicao-item{
+    width: 25%;
+ }
+
+ .medicao-item span{
+    font-size: 3rem;
+    color: var(--second-color);
+ }
+
+ .medicao-item h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color:var(--text-color2);
+    margin-top: 1rem;
+}
+.medicao-item p{
+    color: var(--second-color);
+    line-height: 16px;
+    margin-top: 1rem;
+}
